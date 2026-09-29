@@ -1,0 +1,891 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*PUBLIC*/
+
+
+html
+{
+    font-size: 16px;
+    font-family:inter-semi-bold;
+    overflow-x: hidden;
+
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+input
+{
+    width: 25%;
+    height: 45px;
+    border-radius: 6px 0 0 6px;
+    border-style: none;
+    color:#919BA7;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.submit-btn
+{
+    background-color: #437EF7;
+    color: white;
+    font-family: inter-semi-bold;
+    font-size: 0.9375rem;
+    width: 88px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 0px 6px 6px 0px;
+}
+
+/*End PUBLIC*/
+
+/*Font*/
+@font-face {
+    font-family:inter-bold;   /*700*/
+    src: url(../fonts/inter/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family:inter-semi-bold; /*600*/
+    src: url(../fonts/inter/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:inter-medium; /*500*/
+    src: url(../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+    font-family:inter-regular; /*400*/
+    src: url(../fonts/inter/Inter-Regular.ttf);
+}
+
+/*End Font*/
+
+
+/*HEADER*/
+
+header
+{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-bottom: 1px solid #EAEBF0;
+}
+
+.nav-bar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    position: relative;
+}
+
+.nav-bar i
+{
+    display: none;
+}
+
+.nav-menu
+{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+}
+
+.nav-menu .menu-iteam
+{
+    font-family:inter-semi-bold;
+    font-size: 0.9375rem;
+    line-height: 22px;
+}
+
+.fa-angle-down
+{
+    padding-left: .7rem;
+    vertical-align: middle;
+}
+
+.nav-btn .login-btn
+{
+    background-color:#437EF7;
+    color: white;
+    margin-left: 1rem;
+    width:80px;
+    height:46px;
+    padding: 12px 18px;
+    gap: 6px;
+    border-radius:6px;
+    font-family:inter-semi-bold;
+    font-size: 0.9375rem;
+    line-height: 22px;
+}
+
+.nav-btn .signup-btn
+{
+    color: #437EF7;
+    font-family:inter-semi-bold;
+    font-size: 0.9375rem;
+    line-height: 22px;
+}
+
+/*End HEADER*/
+
+/*FIRST SECTION*/
+.first-section
+{
+    padding-block: 5rem;
+}
+
+.first-section h5
+{
+    color: #437EF7;
+    font-family:inter-semi-bold;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.first-section h1 
+{
+    font-family:inter-bold;
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+    color:#272D37;
+    text-align: center;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.first-section h1 .span-small
+{
+    display: none;
+}
+
+/*End FIRST SECTION*/
+
+/*SECOND SECTION*/
+.second-section
+{
+    background-color: #2B63D9;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.second-section-txt
+{
+    padding-block: 4rem;
+    position: relative;
+}
+
+.second-section-txt h3
+{
+    font-family:inter-semi-bold;
+    font-size: 2rem;
+    line-height: 2.625rem;
+    padding-bottom: 1rem;
+    width: 70%;
+}
+
+.second-section-txt p
+{
+    font-family:inter-regular;
+    color:  #B1CCFB;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 65%;
+
+}
+
+.second-section-form input
+{
+    position: absolute;
+    right: 8%;
+    bottom: 45%;
+}
+
+.second-section-form a
+{
+    background-color: #437EF7;
+    color: white;
+    font-family:inter-semi-bold;
+    font-size: 0.9375rem;
+    width: 88px;
+    height: 45px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 0px 6px 6px 0px;
+    position: absolute;
+    right: 2%;
+    bottom: 45%;
+}
+
+.second-section-form span
+{
+    position: absolute;
+    right: 19.5%;
+    bottom: 35%;
+    padding-top: 10px;
+    color: #B1CCFB;
+    font-family: inter-regular;
+    font-size: 0.875rem;
+    line-height:1.25rem;
+}
+
+/*End SECOND SECTION*/
+
+/*THIRD SECTION*/
+
+.third-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 120px;
+}
+
+.third-section-left
+{
+    position: relative;
+    left: 5%;
+    bottom: 5%;
+}
+.third-section-left .small-image
+{
+    display: none;
+}
+
+.third-section-left h2
+{
+    font-size:1.375rem ;
+    color:#272D37 ;
+    line-height:1.875rem ;
+    padding-top: 1rem;
+}
+
+.third-section-left p
+{
+    font-family:inter-regular;
+    color:#5F6D7E;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-block: 1rem;
+}
+
+.third-section-left span
+{
+    font-family:inter-medium;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #5F6D7E;
+}
+
+.third-section-right
+{
+    width: 100%;
+}
+
+.third-section-right .right-card
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+.right-card .right-card-txt h4
+{
+    font-size: 1.375rem;
+    color: #272D37;
+    line-height: 1.875rem;
+}
+
+.right-card .right-card-txt p
+{
+    font-family:inter-regular;
+    color: #5F6D7E;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    width: 75%;
+}
+
+.right-card .right-card-txt span
+{
+    font-family:inter-medium;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #5F6D7E;
+}
+
+/*END THIRD SECTION*/
+
+/*FOURTH SECTION*/
+
+.fourth-section h2
+{
+    font-family:inter-bold ;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #272D37;
+    text-align: center;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.fourth-section h2::after
+{
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 60px;
+    transform: translateX(50%);
+    width: 138px;
+    height: 5px;
+    background-color: #D9D9D9;
+}
+
+.card-container
+{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.fourth-section-card img
+{
+    padding-bottom: 10px;
+}
+
+.fourth-section-card .date
+{
+    font-family:inter-medium;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #5F6D7E;
+}
+
+.fourth-section-card h4
+{
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    color: #272D37;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.fourth-section-card a
+{
+    color: #437EF7;
+    font-family:inter-semi-bold;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    position: relative;
+}
+
+.fourth-section-card i
+{
+    width: 20px;
+    height: 20px;
+    color: #437EF7;
+    padding-left: 10px;
+    position: absolute;
+    bottom: -25%;
+}
+
+.fourth-section-card
+{
+    margin-bottom: 32px;
+}
+
+/*END FOURTH SECTION*/
+
+/*FIFTH SECTION*/
+
+.fifth-section
+{
+    background-color: #2B63D9;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+}
+
+.fifth-section .fifth-section-txt .buttons
+{
+    position: relative;
+}
+
+.fifth-section-txt
+{
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    margin-bottom: 120px;
+}
+
+.fifth-section .login-btn
+{
+    display: none;
+}
+
+.fifth-section-txt span
+{
+    font-size: 14px;
+}
+
+.fifth-section-txt h2
+{
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+}
+
+.fifth-section-txt a
+{
+    color: #437EF7;
+    font-size: 15px;
+    line-height: 22px;
+    background-color: white;
+    padding: 12px 18px 12px 18px;
+    border-radius: 6px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 32px;
+}
+/*END FIFTH SECTION*/
+
+/*FOOTER*/
+.footer
+{
+    background-color: #151B28;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 64px;
+    position: relative;
+}
+
+.footer-txt p
+{
+    font-family: inter-regular;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+.footer-txt
+{
+    position: relative;
+    left: 20%;
+}
+
+.footer-txt input
+{
+    width: 75%;
+}
+
+.footer-txt .submit-btn
+{
+    position: absolute;
+}
+
+.footer-list
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+
+
+.footer-list ul:not(:last-child)
+{
+    margin-inline-end: 120px;
+}
+
+.footer-list li
+{
+    margin-bottom: 12px;
+}
+
+.footer-list li a
+{
+    color: #A5ACBA;
+    font-family:inter-medium ;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.footer-list .active
+{
+ 
+    color: #F9F9F9;
+    font-size: 16px;
+    line-height: 50px;
+} 
+
+.footer .copyright
+{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 64px;
+    font-family: inter-regular;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #A5ACBA;
+}
+
+.footer .copyright::before
+{
+    content: "";
+    width: 1349px;
+    height: 1px;
+    background-color: #2E3545;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*END FOOTER*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px)
+{
+    html
+    {
+        overflow-x: hidden;
+    }
+    .container
+    {
+        width: 100%;
+        margin: auto;
+        padding-inline: 2rem;
+    }
+
+    .nav-bar
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar .nav-btn
+    {
+        display: none;
+    }
+
+    .nav-bar .nav-menu
+    {
+        display: none;
+    }
+
+    .nav-bar i
+    {
+        display: block;
+    }
+
+    .first-section h1 
+    {
+        width: 70%;
+    }
+    .middle
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .third-section
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .third-section-left
+    {
+        position: relative;
+        left: 0;
+    }
+
+    .third-section-left img
+    {
+        width: 90%;
+    }
+    .third-section-right
+    {
+        padding-top: 32px;
+        position: relative;
+        left: 0%;
+    }
+
+    .second-section
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+       
+        left: 0;
+        bottom: 0;
+    }
+
+    .second-section-form input
+    {
+        position: relative;
+        left: 5%;
+        margin-bottom: 64px;
+        width: 55%;
+    }
+
+    .second-section-form .submit-btn
+    {
+        position: absolute;
+        right: 29%;
+        bottom: 64px;
+    }
+
+    .second-section-form span 
+    {
+        position: absolute;
+        left: 39px;
+        bottom: 32px;
+    }
+
+    .second-section-txt p 
+    {
+        width: 75%;
+    }
+
+    .second-section-txt h3
+    {
+        width: 100%;
+    }
+
+    .card-container 
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+    .fifth-section  .login-btn 
+    {
+        display: block;
+        position: absolute;
+        right: 44%;
+        background-color: #437EF7;
+        color: white;
+    }
+
+    .fifth-section .signup-btn
+    {
+        position: absolute;
+        right: 56%;
+    }
+
+    .fifth-section-txt h2 
+    {
+        width: 80%;
+    }
+    
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-txt 
+    {
+        position: relative;
+        left: -15px;
+    }
+
+    .footer-list 
+    {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: relative;
+        left: -22%;
+        margin-top: 64px;
+        margin-inline-end: 0;
+    }
+
+    .footer-list ul 
+    {
+        position: relative;
+        left: 20%;
+        
+    }
+
+    .footer-list ul:not(:last-child) 
+    {
+        margin-inline-end: 0; 
+    }
+
+    .footer-txt input 
+    {
+        width: 75%;
+        background-color: #2C3444;
+    }
+}
+@media (max-width: 375px)
+{
+    .container
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .first-section h1 {
+        width: 100%;
+        font-size: 2.25rem;
+        line-height: 44px;
+    }
+
+
+    .second-section-txt h3
+    {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+    .second-section-txt p 
+    {
+        width: 100%;
+    }
+
+    .second-section-form input 
+    {
+        width: 343px;
+        height: 46px;
+        gap: 8px;
+        border-radius: 6px;
+        position: relative;
+        top: -35px;
+        margin-bottom: 64px;
+    }
+
+    .second-section-form span
+    {
+        display: none;
+    }
+
+    .second-section-form .submit-btn 
+    {
+        width: 343px;
+        height: 48px;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        left: 5%;
+        bottom: 8%;
+    }
+
+    .third-section-right .right-card 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        padding-bottom: 2rem;
+        gap: 1.5rem;
+    }
+
+    .third-section-left .small-image
+    {
+        display: inline;
+        width: 100%;
+    }
+
+    .third-section-left img
+    {
+        display: none;
+    }
+
+    .card-container 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .fifth-section-txt h2 
+    {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    .fifth-section-txt a
+    {
+       width: 275px;
+    }
+
+    .fifth-section-txt .signup-btn 
+    {
+        position: absolute;
+        bottom: -75px;
+        right: 49%;
+    }
+
+    .fifth-section-txt .login-btn
+    {
+        position: absolute;
+        top: 60px;
+        right: 49%;
+    }
+
+    .footer-txt p 
+    {
+        color: #A5ACBA;
+    }
+
+    .footer-list 
+    {
+        display: inline-grid;
+        grid-template-columns: auto auto 2fr;
+        column-gap: 24px;
+    }
+
+    .list-1
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+   

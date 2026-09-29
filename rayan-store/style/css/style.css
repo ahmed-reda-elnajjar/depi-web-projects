@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Mulish-Light;
+    src: url(../../font/Mulish/Mulish-Light.ttf); }
+  @font-face {
+    font-family: Mulish-Bold;
+    src: url(../../font/Mulish/Mulish-Bold.ttf); }
+  * {
+    margin: 0;
+    padding: 0; }
+  
+  html {
+    font-size: 16px;
+    font-family: Mulish-Light; }
+  
+  body {
+    background: #fff8f8; }
+  
+  h2 {
+    font-size: 3.125rem;
+    color: #035755;
+   }
+  
+  h3 {
+    font-size: 1.75rem;
+    color: #FA5652; }
+  
+  a {
+    text-decoration: none; }
+  
+  p {
+    font-size: 1.25rem;
+    color: #4B4F51; }
+  
+  img {
+    max-width: 100%;
+    height: auto; }
+  
+    .container{
+      margin-block: 3rem;
+    }
+    .Center{
+      margin-inline: 28%;
+    }
+  
+  .main-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 65px;
+    border-radius: 4rem; }
+  
+  .primary-button {
+    background-color: #FA5652;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+    width: 250px; }
+  
+  .third-button {
+    border: 2px solid #FA5652;
+    width: 154px;
+    color: #FA5652;
+    font-size: 1.125rem; }
+  
+  .secondary-button {
+    background-color: rgba(250, 86, 82, 0.15);
+    width: 200px;
+    color: #FA5652;
+    font-size: 1.25rem; }
+  
+  .navbar .navbar-brand span {
+    display: inline-block;
+    color: #035755;
+    font-size: 1.1875rem;
+    font-family: Mulish-Bold;
+    -webkit-margin-start: 0.5rem;
+       -moz-margin-start: 0.5rem;
+            margin-inline-start: 0.5rem; }
+  .navbar .navbar-collapse {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
+    .navbar .navbar-collapse .navbar-nav {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+        -webkit-margin-end: 2rem;
+           -moz-margin-end: 2rem;
+                margin-inline-end: 2rem; }
+      .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          color: #FA5652; }
+        .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+          position: relative;
+          color: #FA5652; }
+          .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            background-color: #FA5652; }
